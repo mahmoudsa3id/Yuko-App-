@@ -61,7 +61,7 @@ class ColorsPage extends StatelessWidget {
         backgroundColor: Color(0xff49332A),
         title: Text(
           'Colors',
-          style: TextStyle(color: Colors.white, fontFamily: 'Pacifico-Regular'),
+          style: TextStyle(color: Colors.white, fontFamily: 'DenkOne'),
         ),
       ),
       body: ListView.builder(

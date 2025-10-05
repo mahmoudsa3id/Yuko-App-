@@ -13,11 +13,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Japaness',
+          'Japanese',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,
-            fontFamily: 'Pacifico-Regular',
+            fontFamily: 'DenkOne',
           ),
         ),
         backgroundColor: Color(0xff49332A),
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
               );
             },
             color: Color(0xff294019),
-            text: 'FamilyMembers',
+            text: 'Family Members',
           ),
           Category(
             onTap: () {

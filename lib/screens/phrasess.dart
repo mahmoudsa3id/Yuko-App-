@@ -67,7 +67,7 @@ class Phrasess extends StatelessWidget {
 
         title: Text(
           'Phrasses',
-          style: TextStyle(color: Colors.white, fontFamily: 'Pacifico-Regular'),
+          style: TextStyle(color: Colors.white, fontFamily: 'DenkOne'),
         ),
       ),
       body: ListView.builder(

@@ -28,9 +28,9 @@ class ItemsLists extends StatelessWidget {
                   Text(
                     item.JpName,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
-                      fontFamily: 'Pacifico-Regular',
+                      fontFamily: 'DenkOne',
                     ),
                   ),
                   Text(
@@ -39,7 +39,7 @@ class ItemsLists extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
-                      fontFamily: 'Pacifico-Regular',
+                      fontFamily: 'DenkOne',
                     ),
                   ),
                 ],

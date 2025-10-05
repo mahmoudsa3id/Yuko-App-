@@ -12,7 +12,7 @@ class Category extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.only(left: 24),
         alignment: Alignment.centerLeft,
-        height: 150,
+        height: 185,
         width: double.infinity,
         color: color,
         child: Text(
@@ -20,7 +20,7 @@ class Category extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,
-            fontFamily: 'Pacifico-Regular',
+            fontFamily: 'DenkOne',
           ),
         ),
       ),

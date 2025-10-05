@@ -134,10 +134,10 @@ flutter:
  
   
   fonts:
-     - family: Pacifico-Regular
+     - family: DenkOne
        fonts:
-        - asset: fonts/Pacifico-Regular.ttf
-        - weight: 200
+        - asset: fonts/DenkOne-Regular.ttf
+        - weight: 300
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

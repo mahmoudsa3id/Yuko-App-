@@ -21,9 +21,9 @@ class PhrassesItem extends StatelessWidget {
                 Text(
                   item.JpName,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontFamily: 'Pacifico-Regular',
+                    color: const Color.fromARGB(248, 134, 6, 151),
+                    fontSize: 15,
+                    fontFamily: 'DenkOne',
                   ),
                 ),
                 Text(
@@ -32,7 +32,7 @@ class PhrassesItem extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
-                    fontFamily: 'Pacifico-Regular',
+                    fontFamily: 'DenkOne',
                   ),
                 ),
               ],
