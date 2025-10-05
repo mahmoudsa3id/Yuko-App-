@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:yoku/screens/home_page.dart';
+import 'package:yoku/splash_screen.dart';
 
 void main() {
-  runApp(Toku());
+  runApp(const yuko());
 }
 
-class Toku extends StatelessWidget {
-  const Toku({super.key});
+class yuko extends StatelessWidget {
+  const yuko({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Yoku App',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const SplashScreen(),
+    );
   }
 }

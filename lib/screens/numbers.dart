@@ -72,7 +72,7 @@ class Numbers extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xff49332A),
         title: Text(
-          'numbers',
+          'Numbers',
           style: TextStyle(color: Colors.white, fontFamily: 'DenkOne'),
         ),
       ),
