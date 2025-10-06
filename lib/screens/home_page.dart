@@ -11,12 +11,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffF5F5F5),
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
-          'Japanese',
+          'Japanese Learn',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: 35,
             fontFamily: 'DenkOne',
           ),
         ),
@@ -24,62 +26,71 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Category(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Numbers();
-                  },
+          // اللوجو فوق الكونتينرز
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: CircleAvatar(
+              radius: 60,
+              backgroundColor: Colors.white,
+              child: ClipOval(
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  fit: BoxFit.cover,
+                  width: 100,
+                  height: 100,
                 ),
-              );
-            },
-
-            color: Color(0xffAC6722),
-            text: 'Numbers',
+              ),
+              // إضافة ظل خفيف
+              foregroundColor: Colors.transparent,
+            ),
           ),
-          Category(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Familymembers();
-                  },
-                ),
-              );
-            },
-            color: Color(0xff294019),
-            text: 'Family Members',
+          Expanded(
+            child: Category(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => Numbers()),
+                );
+              },
+              color: Color(0xffAC6722),
+              text: 'Numbers',
+            ),
           ),
-          Category(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return ColorsPage();
-                  },
-                ),
-              );
-            },
-            color: Color(0xff7D40A2),
-            text: 'Color',
+          Expanded(
+            child: Category(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => Familymembers()),
+                );
+              },
+              color: Color(0xff294019),
+              text: 'Family Members',
+            ),
           ),
-          Category(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return Phrasess();
-                  },
-                ),
-              );
-            },
-            color: Color(0xff47A5CB),
-            text: 'Phrases',
+          Expanded(
+            child: Category(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => ColorsPage()),
+                );
+              },
+              color: Color(0xff7D40A2),
+              text: 'Color',
+            ),
+          ),
+          Expanded(
+            child: Category(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => Phrasess()),
+                );
+              },
+              color: Color(0xff47A5CB),
+              text: 'Phrases',
+            ),
           ),
         ],
       ),
